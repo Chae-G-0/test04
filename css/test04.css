@@ -35,11 +35,27 @@
 .gnb {
     position: relative;
     line-height: 150px;
-
 }
 
 .gnb a {
     display: block;
+}
+
+.gnb>ul::after {
+    content: "";
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    transition: 0.5s;
+    z-index: 998;
+}
+
+.gnb>ul:hover::after {
+    height: 200px;
 }
 
 .gnb .smenu {
@@ -58,7 +74,7 @@
 }
 
 .gnb>ul:hover .smenu {
-    height: 250px;
+    height: 200px;
 }
 
 .gnb>ul {
@@ -160,10 +176,48 @@
     opacity: 1;
 }
 
+
+.mainText {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: url(../img/img01.jpg)no-repeat fixed center/cover;
+    height: 500px;
+}
+
+.mainText::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.mainText .container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainText .container p {
+    position: relative;
+    z-index: 999;
+    font-size: 35px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    line-height: 1.3;
+    color: #fff;
+}
+
+.mainText .container strong {
+    font-weight: 700;
+    letter-spacing: 0.035em;
+}
+
 .mainRoom {
     padding: 100px 0;
-    background: #f9f9f9;
-
+    border-bottom: 1px solid #ddd;
 }
 
 .mainRoom .container {
@@ -200,23 +254,6 @@
     margin: 0 0 0 650px;
 }
 
-
-.mainReservation {
-    padding: 100px 0;
-}
-
-.mainReservation .container {
-    width: 1200px;
-    margin: 0 auto;
-}
-
-.mainReservation .container h2 {
-    font-size: 30px;
-    font-weight: 500;
-    color: #333;
-}
-
-
 .mainMap {
     position: relative;
     background: url(../img/img15.jpg)no-repeat center center/ cover;
@@ -245,6 +282,7 @@
 
 .mainMap .tapMap>li.on {
     animation: arrow 2s infinite;
+    color: rgb(0, 110, 255);
 }
 
 @keyframes arrow {
@@ -293,17 +331,16 @@
 
 .mainMap .location h3 {
     font-size: 23px;
-    font-weight: 500;
+    font-weight: 700;
     margin: 0 0 10px 0;
     color: #333;
     padding: 0 20px;
-
 }
 
 .mainMap .location p {
     font-size: 14px;
     font-weight: 500;
-    line-height: 1.2;
+    line-height: 1.4;
     color: #333;
     padding: 0 20px;
     margin: 0 0 30px 0;
@@ -311,14 +348,49 @@
 
 .mainMap .location>div {
     display: none;
-
 }
 
 .mainMap .location>div.on {
     display: block;
-
 }
 
 .mainMap .location>div:hover {
     box-shadow: 0 0 3px #555;
+}
+
+.mainRoot {
+    padding: 100px 0;
+}
+
+.mainRoot .container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainRoot .container .content {
+    display: flex;
+    gap: 30px;
+}
+
+.mainRoot .container .content .left {
+    flex: 1;
+    border: 1px solid #ddd;
+}
+
+.mainRoot .container .content .map {
+    flex: 1;
+}
+
+.mainRoot .container h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #333;
+    margin: 0 0 30px 0;
+}
+
+.mainRoot .container h3 {
+    font-size: 21px;
+    font-weight: 500;
+    color: #333;
+    margin: 0 0 30px 0;
 }

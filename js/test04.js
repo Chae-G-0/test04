@@ -12,7 +12,7 @@ $(function () {
         dots: false,
         autoplay: true,
         centerMode: true,
-        centerPadding: '200px',
+        centerPadding: '00px',
         pauseOnHover: false,
         pauseOnFocus: false,
     })
