@@ -95,6 +95,10 @@
     ;
 }
 
+.mbtn {
+    display: none;
+}
+
 #main .mainVisual {
     position: relative;
 }
@@ -104,7 +108,7 @@
 }
 
 #main .mainVisual .mainSlide .item01 {
-    background: url(../img/img13.jpg) no-repeat center top/cover;
+    background: url(../img/img23.jpg) no-repeat center center/cover;
 }
 
 #main .mainVisual .mainSlide .item02 {
@@ -112,7 +116,44 @@
 }
 
 #main .mainVisual .mainSlide .item03 {
-    background: url(../img/img23.jpg) no-repeat center center/cover;
+    background: url(../img/img13.jpg) no-repeat center top/cover;
+}
+
+#main .scroll {
+    position: absolute;
+    inset: 90% auto auto 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 70px;
+    border: 3px solid #fff;
+    border-radius: 20px;
+}
+
+#main .scroll::after {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: "";
+    width: 3px;
+    height: 12px;
+    border-radius: 1.5px;
+    background: #fff;
+    transform: translateX(-50%);
+    animation: rorate 1s infinite linear;
+}
+
+@keyframes rorate {
+    0% {
+        top: 10px;
+    }
+
+    50% {
+        top: 25px;
+    }
+
+    100% {
+        top: 40px;
+    }
 }
 
 .mainFacility {
@@ -221,7 +262,7 @@
 }
 
 .mainRoom .container {
-    position: relative;
+
     width: 1200px;
     margin: 0 auto;
 }
@@ -231,6 +272,10 @@
     font-weight: 500;
     margin: 0 0 30px 0;
     color: #333;
+}
+
+.mainRoom .container .box {
+    position: relative;
 }
 
 .mainRoom .container .room figure {
@@ -259,6 +304,11 @@
     background: url(../img/img15.jpg)no-repeat center center/ cover;
     height: 100vh;
 }
+
+.mapWrap {
+    height: 100vh;
+}
+
 
 .mainMap h2 {
     position: absolute;
@@ -374,23 +424,100 @@
 
 .mainRoot .container .content .left {
     flex: 1;
-    border: 1px solid #ddd;
+}
+
+.mainRoot .container .content .left .car {
+    margin: 0 0 30px 0;
+}
+
+.mainRoot .container .content p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.25;
+    color: #222;
+    margin: 0 0 10px 0;
+}
+
+.mainRoot .container .content strong {
+    font-weight: 500;
+    margin: 0 0 5px 0;
 }
 
 .mainRoot .container .content .map {
     flex: 1;
 }
 
+.wrap_controllers {
+    display: none;
+}
+
 .mainRoot .container h2 {
     font-size: 30px;
     font-weight: 500;
-    color: #333;
+    color: #222;
     margin: 0 0 30px 0;
 }
 
 .mainRoot .container h3 {
     font-size: 21px;
     font-weight: 500;
-    color: #333;
-    margin: 0 0 30px 0;
+    color: #222;
+    margin: 0 0 10px 0;
+}
+
+#footer {
+    background: #111;
+    color: #ddd;
+}
+
+#footer .top {
+    border-bottom: 1px solid #444;
+}
+
+#footer .top .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+
+}
+
+#footer .top a {
+    max-width: 100px;
+    line-height: 150px;
+}
+
+#footer .top dl {
+    display: flex;
+    gap: 20px;
+    line-height: 150px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#footer .top i {
+    font-size: 21px;
+    padding: 0 5px;
+}
+
+#footer .bottom {
+    display: flex;
+    gap: 50px;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+#footer .bottom h2 {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+#footer .bottom dl {
+    display: flex;
+    gap: 20px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.4;
 }

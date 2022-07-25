@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/test04.css">
+    <!-- <link rel="stylesheet" href="./css/test_re04.css"> -->
 </head>
 
 <body>
@@ -57,6 +58,7 @@
                     </li>
                 </ul>
             </nav>
+            <i class="xi-bars mbtn"></i>
         </div>
     </header>
     <!--  2022.07.21 header chae } -->
@@ -67,6 +69,9 @@
                 <figure class="item01"></figure>
                 <figure class="item02"></figure>
                 <figure class="item03"></figure>
+            </div>
+            <div class="scroll">
+
             </div>
         </section>
         <section class="mainFacility">
@@ -119,34 +124,37 @@
         <section class="mainRoom">
             <div class="container">
                 <h2>객실</h2>
-                <div class="room">
-                    <figure>
-                        <img src="./img/room01.jpg" alt="">
-                    </figure>
-                    <figure>
-                        <img src="./img/room02.jpg" alt="">
-                    </figure>
-                    <figure>
-                        <img src="./img/room03.jpg" alt="">
-                    </figure>
-                    <figure>
-                        <img src="./img/room04.jpg" alt="">
-                    </figure>
-                    <figure>
-                        <img src="./img/room05.jpg" alt="">
-                    </figure>
-                    <figure>
-                        <img src="./img/room06.jpg" alt="">
-                    </figure>
+                <div class="box">
+                    <div class="room">
+                        <figure>
+                            <img src="./img/room01.jpg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="./img/room02.jpg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="./img/room03.jpg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="./img/room04.jpg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="./img/room05.jpg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="./img/room06.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="arrow">
+                        <i class="xi-angle-left-thin"></i>
+                        <i class="xi-angle-right-thin"></i>
+                    </div>
                 </div>
-                <div class="arrow">
-                    <i class="xi-angle-left-thin"></i>
-                    <i class="xi-angle-right-thin"></i>
-                </div>
-
             </div>
         </section>
         <section class="mainMap">
+            <div class="mapWrap">
+            </div>
             <h2>MAP</h2>
             <ul class="tapMap">
                 <li class="">
@@ -221,36 +229,49 @@
                     <div class="left">
                         <div class="car">
                             <h3>자동차 이용</h3>
-                            <p></p>
+                            <p>남해고속도로를 따라 약 300m 이동 → 사천IC교차로에서 '사천, 사천공항' 방면으로
+                                오른쪽 방향 → 사천대로를 따라 약 19km 이동 → 자산터널 진입 후 사천대로를 따라
+                                약 3km 이동 → 대방교차로에서 '남해.창선, 늑도.초양, 창선삼천포대교' 방면으로
+                                우회전 → 삼천포대교로를 따라 약 10km 이동 → '오용리, 부윤리, 창선면사무소, 수산리'
+                                방면으로 오른쪽 방향 → 약 300m 이동 후 좌회전 → 베이클럽</p>
                         </div>
                         <div class="bus">
                             <h3>대중교통 이용</h3>
-                            <p></p>
+                            <p><strong>버스 이용</strong> <br />
+                                농어촌 남해-연곡(초양.난음.지족.수산.오룡.가인)(남해공용터미널) 승차 → 약 1시간 30분 소요 (33개 정류장) → 식포 정류장 하차 → 약 500m
+                                이동 → 베이클럽
+                            </p>
+
+                            <p><strong>택시 이용</strong> <br />
+                                남해시외버스터미널 → 약 35분 소요 → 베이클럽 (택시비 약 34,500원)</p>
                         </div>
                     </div>
                     <div class="map">
-                        <!-- * 카카오맵 - 지도퍼가기 -->
-                        <!-- 1. 지도 노드 -->
-                        <div id="daumRoughmapContainer1658472629766"
-                            class="root_daum_roughmap root_daum_roughmap_landing">
-                        </div>
+                        <div class="case">
+                            <!-- * 카카오맵 - 지도퍼가기 -->
+                            <!-- 1. 지도 노드 -->
+                            <div id="daumRoughmapContainer1658472629766"
+                                class="root_daum_roughmap root_daum_roughmap_landing">
+                            </div>
 
-                        <!--
+                            <!--
         2. 설치 스크립트
         * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
     -->
-                        <script charset="UTF-8" class="daum_roughmap_loader_script"
-                            src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                            <script charset="UTF-8" class="daum_roughmap_loader_script"
+                                src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 
-                        <!-- 3. 실행 스크립트 -->
-                        <script charset="UTF-8">
-                            new daum.roughmap.Lander({
-                                "timestamp": "1658472629766",
-                                "key": "2b4h9",
-                                "mapWidth": "640",
-                                "mapHeight": "360"
-                            }).render();
-                        </script>
+                            <!-- 3. 실행 스크립트 -->
+                            <script charset="UTF-8">
+                                new daum.roughmap.Lander({
+                                    "timestamp": "1658472629766",
+                                    "key": "2b4h9",
+                                    //"mapWidth": "640",
+                                    "mapHeight": "360"
+                                }).render();
+                            </script>
+                        </div>
+
                     </div>
                 </div>
 
@@ -261,8 +282,55 @@
     <!-- { 2022.07.22 footer chae -->
     <!-- 2022.07.22 footer chae } -->
     <footer id="footer">
-
+        <div class="top">
+            <div class="container">
+                <a href="">
+                    <img src="./img/logo_w.png" alt="">
+                </a>
+                <dl>
+                    <dd>사업자등록번호 : 2551500579</dd>
+                    <dd>주소 : 경상남도 남해군 창선면 흥선로 447-42</dd>
+                    <dd>대표 : 배필리</dd>
+                    <dd>통신판매업신고번호 : 0000</dd>
+                </dl>
+                <div class="icon">
+                    <a href=""><i class="xi-facebook"></i></a>
+                    <a href=""><i class="xi-youtube"></i></a>
+                    <a href=""><i class="xi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="footRoom">
+                <h2>Room</h2>
+                <dl>
+                    <dd>디플로마 스위트</dd>
+                    <dd>포레스트 스위트</dd>
+                    <dd>루프탑 스위트</dd>
+                    <dd>베이 스위트</dd>
+                    <dd>클럽 스위트</dd>
+                </dl>
+            </div>
+            <div class="footReser">
+                <h2>Reservation</h2>
+                <dl>
+                    <dd>실시간 예약</dd>
+                    <dd>예약 안내</dd>
+                    <dd>이용 안내</dd>
+                </dl>
+            </div>
+            <div class="footfac">
+                <h2>Facility</h2>
+                <dl>
+                    <dd>피트니스센터</dd>
+                    <dd>카페 & 라운지</dd>
+                    <dd>컨퍼런스 룸</dd>
+                    <dd>수영장</dd>
+                </dl>
+            </div>
+        </div>
     </footer>
+    <!-- 2022.07.25 footer chae } -->
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/jquery.scrollme.min.js"></script>
     <script src="./js/jquery.mb.YTPlayer.min.js"></script>

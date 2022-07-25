@@ -12,7 +12,7 @@ $(function () {
         dots: false,
         autoplay: true,
         centerMode: true,
-        centerPadding: '00px',
+        centerPadding: '200px',
         pauseOnHover: false,
         pauseOnFocus: false,
     })
@@ -26,13 +26,18 @@ $(function () {
     })
 
 
-
     $('.tapMap>li>a').on('click', function (e) {
         e.preventDefault();
         var idx = $(this).parent().index();
-        $('.location>div').removeClass('on')
-        $('.location>div').eq(idx).addClass('on');
-        $('.tapMap>li').removeClass('on');
-        $(this).parent().addClass('on');
+        // $('.location>div').removeClass('on');
+        $('.location>div').eq(idx).toggleClass('on').siblings().removeClass('on');
+        // $('.tapMap>li').removeClass('on');
+        $(this).parent().toggleClass('on').siblings().removeClass('on');
+        $('.mapWrap').toggleClass('on');
     });
+    $('.mapWrap').on('click', function () {
+        $('.location>div').removeClass('on');
+        $('.tapMap>li>a').removeClass('on');
+        $('.tapMap>li').removeClass('on');
+    })
 })
