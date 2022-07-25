@@ -21,10 +21,14 @@
 
     #header .container {
         display: flex;
-        width: 1200px;
+        /* width: 1200px; */
         margin: 0 auto;
         justify-content: space-between;
         text-align: center;
+    }
+
+    #header h1 {
+        margin: 0 auto;
     }
 
     #header h1 img {
@@ -166,7 +170,7 @@
     }
 
     .mainFacility .container {
-        width: 1200px;
+        /* width: 1200px; */
         margin: 0 auto;
     }
 
@@ -241,7 +245,7 @@
     }
 
     .mainText .container {
-        width: 1200px;
+        /* width: 1200px; */
         margin: 0 auto;
     }
 
@@ -266,8 +270,7 @@
     }
 
     .mainRoom .container {
-
-        width: 1200px;
+        /* width: 1200px; */
         margin: 0 auto;
     }
 
@@ -412,12 +415,12 @@
     }
 
     .mainRoot .container {
-        width: 1200px;
         margin: 0 auto;
     }
 
     .mainRoot .container .content {
         display: flex;
+        flex-direction: column;
         gap: 30px;
     }
 
@@ -475,7 +478,7 @@
 
     #footer .top .container {
         display: flex;
-        width: 1200px;
+        /* width: 1200px; */
         margin: 0 auto;
         justify-content: space-between;
 
@@ -502,7 +505,7 @@
     #footer .bottom {
         display: flex;
         gap: 50px;
-        width: 1200px;
+        /* width: 1200px; */
         margin: 0 auto;
         padding: 30px 0;
     }
