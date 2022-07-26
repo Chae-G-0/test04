@@ -16,7 +16,7 @@
 }
 
 #header:hover .gnb a {
-    color: #666;
+    color: #333;
     text-shadow: none;
 }
 
@@ -67,7 +67,7 @@
     font-size: 15px;
     font-weight: 500;
     line-height: 50px;
-    color: #666;
+    color: #333;
     overflow: hidden;
     transition: 0.5s;
     z-index: 999;
@@ -91,8 +91,7 @@
     font-size: 19px;
     font-weight: 500;
     color: #fff;
-    text-shadow: 0 0 3px #555;
-    ;
+    text-shadow: 0 0 3px #333;
 }
 
 .mbtn {
@@ -139,19 +138,11 @@
     border-radius: 1.5px;
     background: #fff;
     transform: translateX(-50%);
-    animation: rorate 1s infinite linear;
+    animation: rotate 2s infinite;
 }
 
-@keyframes rorate {
-    0% {
-        top: 10px;
-    }
-
-    50% {
-        top: 25px;
-    }
-
-    100% {
+@keyframes rotate {
+    to {
         top: 40px;
     }
 }
@@ -217,7 +208,6 @@
     opacity: 1;
 }
 
-
 .mainText {
     position: relative;
     display: flex;
@@ -262,7 +252,6 @@
 }
 
 .mainRoom .container {
-
     width: 1200px;
     margin: 0 auto;
 }
@@ -310,6 +299,7 @@
 }
 
 
+
 .mainMap h2 {
     position: absolute;
     inset: 10% auto auto 50%;
@@ -319,16 +309,19 @@
     font-weight: 700;
     margin: 0 0 30px 0;
     color: #fff;
-    text-shadow: 0 0 3px #555;
-    ;
+    text-shadow: 0 0 3px #333;
 }
 
 .mainMap .tapMap>li {
     position: absolute;
     font-size: 35px;
     color: #333;
+}
+
+.mainMap .tapMap.on li {
     animation: arrow 2s;
 }
+
 
 .mainMap .tapMap>li.on {
     animation: arrow 2s infinite;
@@ -380,7 +373,7 @@
 }
 
 .mainMap .location h3 {
-    font-size: 23px;
+    font-size: 25px;
     font-weight: 700;
     margin: 0 0 10px 0;
     color: #333;
@@ -388,7 +381,7 @@
 }
 
 .mainMap .location p {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
     line-height: 1.4;
     color: #333;
@@ -479,7 +472,6 @@
     width: 1200px;
     margin: 0 auto;
     justify-content: space-between;
-
 }
 
 #footer .top a {
