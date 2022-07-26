@@ -28,6 +28,16 @@ $(function () {
         centerPadding: '200px',
         pauseOnHover: false,
         pauseOnFocus: false,
+        responsive: [
+            {
+                breakpoint: 1500,
+                settings: {
+                    centerMode: false,
+                    centerPadding: '100px',
+                    vertical: true,
+                }
+            },
+        ]
     })
 
     // if ($(window).width() < 769) {

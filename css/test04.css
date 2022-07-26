@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Nanum+Myeongjo&display=swap');
 
+* {
+    outline: 1px solid #f00;
+}
+
 #header {
     position: absolute;
     top: 0;
