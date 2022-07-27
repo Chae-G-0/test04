@@ -11,7 +11,6 @@ $(function () {
         }
     })
 
-
     $('.mainSlide').slick({
         arrows: false,
         dots: false,
@@ -39,12 +38,6 @@ $(function () {
             },
         ]
     })
-
-    // if ($(window).width() < 769) {
-    //     $('.room').slick({
-    //         vertical: true,
-    //     })
-    // }
 
     $('.arrow i:nth-child(1)').on('click', function () {
         $('.mainRoom .room').slick('slickPrev')
