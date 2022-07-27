@@ -1081,7 +1081,7 @@
 
     #footer .bottom dl {
         display: flex;
-        gap: 20px;
+        gap: 5px;
         font-size: 13px;
         font-weight: 300;
         line-height: 1.4;
