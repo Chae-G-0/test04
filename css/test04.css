@@ -605,7 +605,6 @@
     .gnb>ul:hover::after {
         display: none;
         height: 200px;
-        pointer-events: none;
     }
 
     .gnb>ul {
@@ -653,7 +652,7 @@
     .mbtn {
         display: block;
         position: fixed;
-        font-size: 30px;
+        font-size: 25px;
         top: 23px;
         right: 30px;
         padding: 5px;
@@ -1062,18 +1061,20 @@
     }
 
     #footer .top .container .box {
-        padding: 20px 0;
+        padding: 20px 20px;
     }
 
     #footer .top .container .inner {
         display: flex;
-        gap: 50px;
+        flex-direction: column;
+        gap: 20px;
         margin: 0 0 20px 0;
     }
 
     #footer .top a {
         max-width: 100px;
-        line-height: 150px;
+        line-height: 100px;
+        padding: 0 10px;
     }
 
     #footer .top dl {
@@ -1089,7 +1090,7 @@
         justify-content: space-between;
         width: auto;
         margin: 0 auto;
-        padding: 50px 0;
+        padding: 50px 10px;
     }
 
     #footer .bottom i {
