@@ -152,7 +152,7 @@
 }
 
 .mainFacility {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .mainFacility .container {
@@ -701,7 +701,7 @@
     }
 
     .mainFacility {
-        padding: 100px 0;
+        padding: 50px 0;
     }
 
     .mainFacility .container {
@@ -802,7 +802,7 @@
     }
 
     .mainRoom {
-        padding: 100px 0;
+        padding: 50px 0;
         border-bottom: 1px solid #ddd;
     }
 
@@ -847,7 +847,7 @@
 
     .mainMap {
         position: relative;
-        background: url(../img/img15.jpg)no-repeat center center/ cover;
+        background: url(../img/img15.jpg)no-repeat center left 75%/ cover;
         height: 600px;
     }
 
@@ -867,7 +867,7 @@
     .mainMap .tapMap>li {
         position: absolute;
         font-size: 35px;
-        color: #333;
+        color: rgb(0, 110, 255);
         animation: arrow 2s;
     }
 
@@ -883,23 +883,23 @@
     }
 
     .mainMap .tapMap>li:nth-child(1) {
-        inset: 40% auto auto 52%;
+        inset: 40% auto auto 24%;
     }
 
     .mainMap .tapMap>li:nth-child(2) {
-        inset: 18% auto auto 78%;
+        inset: 21% auto auto 78%;
     }
 
     .mainMap .tapMap>li:nth-child(3) {
-        inset: 37% auto auto 67%;
+        inset: 37% auto auto 57%;
     }
 
     .mainMap .tapMap>li:nth-child(4) {
-        inset: 39% auto auto 88%;
+        inset: 33% auto auto 76%;
     }
 
     .mainMap .tapMap>li:nth-child(5) {
-        inset: 40% auto auto 59.5%;
+        inset: 40% auto auto 42%;
     }
 
     .mainMap .location div {
@@ -950,7 +950,7 @@
     }
 
     .mainRoot {
-        padding: 100px 20px;
+        padding: 50px 20px;
     }
 
     .mainRoot .container {
