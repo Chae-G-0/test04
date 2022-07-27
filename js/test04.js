@@ -69,4 +69,8 @@ $(function () {
             $('.tapMap').toggleClass('on');
         }
     })
+
+    if ($(window).width() < 768) {
+        $('.facility').removeClass('scrollme');
+    }
 })
