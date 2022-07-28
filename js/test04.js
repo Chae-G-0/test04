@@ -1,12 +1,12 @@
 $(function () {
-    $('.mbtn').on('click', function () {
-        $('.gnb').toggleClass('on')
+    $(".mbtn").on("click", function () {
+        $(".gnb").toggleClass("on");
     });
 
-    $('.gnb>ul>li>a').on('click', function (e) {
-        if ($('.gnb').hasClass('on')) {
+    $(".gnb>ul>li>a").on("click", function (e) {
+        if ($(".gnb").hasClass("on")) {
             e.preventDefault();
-            $('.smenu').slideUp();
+            $(".smenu").slideUp();
             $(this).next().stop().slideToggle();
         }
     });
@@ -16,20 +16,20 @@ $(function () {
     //     $('.smenu').removeAttr('style')
     // })
 
-    $('.mainSlide').slick({
+    $(".mainSlide").slick({
         arrows: false,
         dots: false,
         autoplay: true,
         pauseOnHover: false,
         pauseOnFocus: false,
-    })
+    });
 
-    $('.room').slick({
+    $(".room").slick({
         arrows: false,
         dots: false,
         autoplay: true,
         centerMode: true,
-        centerPadding: '200px',
+        centerPadding: "200px",
         pauseOnHover: false,
         pauseOnFocus: false,
         responsive: [
@@ -37,45 +37,49 @@ $(function () {
                 breakpoint: 1500,
                 settings: {
                     centerMode: false,
-                    centerPadding: '100px',
+                    centerPadding: "100px",
                     vertical: true,
-                }
+                },
             },
-        ]
-    })
+        ],
+    });
 
-    $('.arrow i:nth-child(1)').on('click', function () {
-        $('.mainRoom .room').slick('slickPrev')
-    })
+    $(".arrow i:nth-child(1)").on("click", function () {
+        $(".mainRoom .room").slick("slickPrev");
+    });
 
-    $('.arrow i:nth-child(2)').on('click', function () {
-        $('.mainRoom .room').slick('slickNext')
-    })
+    $(".arrow i:nth-child(2)").on("click", function () {
+        $(".mainRoom .room").slick("slickNext");
+    });
 
-    $('.tapMap>li>a').on('click', function (e) {
+    $(".tapMap>li>a").on("click", function (e) {
         e.preventDefault();
         var idx = $(this).parent().index();
         // $('.location>div').removeClass('on');
-        $('.location>div').eq(idx).toggleClass('on').siblings().removeClass('on');
+        $(".location>div").eq(idx).toggleClass("on").siblings().removeClass("on");
         // $('.tapMap>li').removeClass('on');
-        $(this).parent().toggleClass('on').siblings().removeClass('on');
-        $('.mapWrap').toggleClass('on');
+        $(this).parent().toggleClass("on").siblings().removeClass("on");
+        $(".mapWrap").toggleClass("on");
     });
-    $('.mapWrap').on('click', function () {
-        $('.location>div').removeClass('on');
-        $('.tapMap>li>a').removeClass('on');
-        $('.tapMap>li').removeClass('on');
-    })
+    $(".mapWrap").on("click", function () {
+        $(".location>div").removeClass("on");
+        $(".tapMap>li>a").removeClass("on");
+        $(".tapMap>li").removeClass("on");
+    });
 
-    $(window).on('scroll', function () {
-        var sct = $(this).scrollTop()
-        var mapTop = $('.mainMap').offset().top
+    $(".facility>figure>a").on("click", function (e) {
+        e.preventDefault();
+    });
+
+    $(window).on("scroll", function () {
+        var sct = $(this).scrollTop();
+        var mapTop = $(".mainMap").offset().top;
         if (sct > mapTop - 400) {
-            $('.tapMap').toggleClass('on');
+            $(".tapMap").toggleClass("on");
         }
-    })
+    });
 
     if ($(window).width() < 768) {
-        $('.facility').removeClass('scrollme');
+        $(".facility").removeClass("scrollme");
     }
-})
+});

@@ -1,348 +1,360 @@
 <!DOCTYPE html>
 <html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>test04</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/slick.css" />
+        <link rel="stylesheet" href="./css/test04.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test04</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/slick.css">
-    <link rel="stylesheet" href="./css/test04.css">
-</head>
-
-<body>
-    <div class="Wrap">
-        <!-- { 2022.07.21 header chae  -->
-        <header id="header">
-            <div class="container">
-                <h1>
-                    <a href="/">
-                        <img src="./img/logo_r.png" alt="">
-                    </a>
-                </h1>
-                <nav class="gnb">
-                    <ul>
-                        <li>
-                            <a href="">소개</a>
-                            <ul class="smenu">
-                                <li><a href="">베이클럽</a></li>
-                                <li><a href="">오시는 길</a></li>
-                                <li><a href="">외관 / 경관</a></li>
-                            </ul>
+    <body>
+        <div class="Wrap">
+            <!-- { 2022.07.21 header chae  -->
+            <header id="header">
+                <div class="container">
+                    <h1>
+                        <a href="/">
+                            <img src="./img/logo_r.png" alt="" />
+                        </a>
+                    </h1>
+                    <nav class="gnb">
+                        <ul>
+                            <li>
+                                <a href="">소개</a>
+                                <ul class="smenu">
+                                    <li>
+                                        <a href="">베이클럽</a>
+                                    </li>
+                                    <li>
+                                        <a href="">오시는 길</a>
+                                    </li>
+                                    <li>
+                                        <a href="">외관 / 경관</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">객실</a>
+                                <ul class="smenu">
+                                    <li>
+                                        <a href="">베이 스위트</a>
+                                    </li>
+                                    <li>
+                                        <a href="">클럽 스위트</a>
+                                    </li>
+                                    <li>
+                                        <a href="">포레스트 스위트</a>
+                                    </li>
+                                    <li>
+                                        <a href="">루프탑 스위트</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">시설</a>
+                                <ul class="smenu">
+                                    <li>
+                                        <a href="">수영장</a>
+                                    </li>
+                                    <li>
+                                        <a href="">카페 / 라운지</a>
+                                    </li>
+                                    <li>
+                                        <a href="">피트니스센터</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">예약</a>
+                                <ul class="smenu">
+                                    <li>
+                                        <a href="">실시간 예약</a>
+                                    </li>
+                                    <li>
+                                        <a href="">예약 안내</a>
+                                    </li>
+                                    <li>
+                                        <a href="">이벤트 예약</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <i class="xi-bars mbtn"></i>
+                </div>
+            </header>
+            <!--  2022.07.21 header chae } -->
+            <!-- { 2022.07.21 main chae  -->
+            <main id="main">
+                <section class="mainVisual">
+                    <div class="mainSlide">
+                        <figure class="item01"></figure>
+                        <figure class="item02"></figure>
+                        <figure class="item03"></figure>
+                    </div>
+                    <div class="scroll"></div>
+                </section>
+                <section class="mainFacility">
+                    <div class="container">
+                        <div class="txt">
+                            <h2>시설</h2>
+                            <a href="">MORE</a>
+                        </div>
+                        <div class="facility scrollme">
+                            <figure class="animateme" data-from="1" data-to="0" data-opacity="0" data-translatey="500">
+                                <a href="">
+                                    <img src="./img/verimg02.jpg" alt="" />
+                                    <p>fitness center</p>
+                                </a>
+                            </figure>
+                            <figure class="animateme" data-from="1" data-to="0" data-opacity="0">
+                                <a href="">
+                                    <img src="./img/verimg03.jpg" alt="" />
+                                    <p>cafe & lounge</p>
+                                </a>
+                            </figure>
+                            <figure class="animateme" data-from="1" data-to="0" data-opacity="0" data-translatey="500">
+                                <a href="">
+                                    <img src="./img/verimg04.jpg" alt="" />
+                                    <p>conference room</p>
+                                </a>
+                            </figure>
+                            <figure class="animateme" data-from="1" data-to="0" data-opacity="0">
+                                <a href="">
+                                    <img src="./img/verimg05.jpg" alt="" />
+                                    <p>event</p>
+                                </a>
+                            </figure>
+                            <figure class="animateme" data-from="1" data-to="0" data-opacity="0" data-translatey="500">
+                                <a href="">
+                                    <img src="./img/verimg06.jpg" alt="" />
+                                    <p>swimming pool</p>
+                                </a>
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+                <section class="mainText">
+                    <div class="container">
+                        <p>
+                            <strong>남해바다</strong>
+                            그 비밀스러운 공간에 자리 잡고 있는
+                            <strong>베이클럽</strong>은<br />
+                            격이 다른 건축의 미와
+                            <strong>호텔급 서비스</strong>를 제공하는 고품격 프라이빗<br /><strong>풀빌라 리조트</strong>입니다.
+                        </p>
+                    </div>
+                </section>
+                <section class="mainRoom">
+                    <div class="container">
+                        <h2>객실</h2>
+                        <div class="box">
+                            <div class="room">
+                                <figure>
+                                    <img src="./img/room01.jpg" alt="" />
+                                </figure>
+                                <figure>
+                                    <img src="./img/room02.jpg" alt="" />
+                                </figure>
+                                <figure>
+                                    <img src="./img/room03.jpg" alt="" />
+                                </figure>
+                                <figure>
+                                    <img src="./img/room04.jpg" alt="" />
+                                </figure>
+                                <figure>
+                                    <img src="./img/room05.jpg" alt="" />
+                                </figure>
+                                <figure>
+                                    <img src="./img/room06.jpg" alt="" />
+                                </figure>
+                            </div>
+                            <div class="arrow">
+                                <i class="xi-angle-left-thin"></i>
+                                <i class="xi-angle-right-thin"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="mainMap">
+                    <div class="mapWrap"></div>
+                    <h2>MAP</h2>
+                    <ul class="tapMap">
+                        <li class="">
+                            <a href=""><i class="xi-maker"></i></a>
                         </li>
                         <li>
-                            <a href="">객실</a>
-                            <ul class="smenu">
-                                <li><a href="">베이 스위트</a></li>
-                                <li><a href="">클럽 스위트</a></li>
-                                <li><a href="">포레스트 스위트</a></li>
-                                <li><a href="">루프탑 스위트</a></li>
-                            </ul>
+                            <a href=""><i class="xi-maker"></i></a>
                         </li>
                         <li>
-                            <a href="">시설</a>
-                            <ul class="smenu">
-                                <li><a href="">수영장</a></li>
-                                <li><a href="">카페 / 라운지</a></li>
-                                <li><a href="">피트니스센터</a></li>
-                            </ul>
+                            <a href=""><i class="xi-maker"></i></a>
                         </li>
                         <li>
-                            <a href="">예약</a>
-                            <ul class="smenu">
-                                <li><a href="">실시간 예약</a></li>
-                                <li><a href="">예약 안내</a></li>
-                                <li><a href="">이벤트 예약</a></li>
-                            </ul>
+                            <a href=""><i class="xi-maker"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="xi-maker"></i></a>
                         </li>
                     </ul>
-                </nav>
-                <i class="xi-bars mbtn"></i>
-            </div>
-        </header>
-        <!--  2022.07.21 header chae } -->
-        <!-- { 2022.07.21 main chae  -->
-        <main id="main">
-            <section class="mainVisual">
-                <div class="mainSlide">
-                    <figure class="item01"></figure>
-                    <figure class="item02"></figure>
-                    <figure class="item03"></figure>
-                </div>
-                <div class="scroll">
-
-                </div>
-            </section>
-            <section class="mainFacility">
-                <div class="container">
-                    <div class="txt">
-                        <h2>시설</h2>
-                        <a href="">MORE</a>
-                    </div>
-                    <div class="facility scrollme">
-                        <figure class="animateme" data-from="1" data-to="0" data-opacity="0" data-translatey="500">
-                            <a href="">
-                                <img src="./img/verimg02.jpg" alt="">
-                                <p>fitness center</p>
-                            </a>
-                        </figure>
-                        <figure class="animateme" data-from="1" data-to="0" data-opacity="0">
-                            <a href="">
-                                <img src="./img/verimg03.jpg" alt="">
-                                <p>cafe & lounge</p>
-                            </a>
-                        </figure>
-                        <figure class="animateme" data-from="1" data-to="0" data-opacity="0" data-translatey="500">
-                            <a href="">
-                                <img src="./img/verimg04.jpg" alt="">
-                                <p>conference room</p>
-                            </a>
-                        </figure>
-                        <figure class="animateme" data-from="1" data-to="0" data-opacity="0">
-                            <a href="">
-                                <img src="./img/verimg05.jpg" alt="">
-                                <p>event</p>
-                            </a>
-                        </figure>
-                        <figure class="animateme" data-from="1" data-to="0" data-opacity="0" data-translatey="500">
-                            <a href="">
-                                <img src="./img/verimg06.jpg" alt="">
-                                <p>swimming pool</p>
-                            </a>
-                        </figure>
-                    </div>
-                </div>
-            </section>
-            <section class="mainText">
-                <div class="container">
-                    <p><strong>남해바다</strong> 그 비밀스러운 공간에 자리 잡고 있는 <strong>베이클럽</strong>은<br />
-                        격이 다른 건축의 미와 <strong>호텔급 서비스</strong>를 제공하는 고품격 프라이빗<br /><strong>풀빌라 리조트</strong>입니다.</p>
-                </div>
-
-            </section>
-            <section class="mainRoom">
-                <div class="container">
-                    <h2>객실</h2>
-                    <div class="box">
-                        <div class="room">
+                    <div class="location">
+                        <div class="diploma">
                             <figure>
-                                <img src="./img/room01.jpg" alt="">
+                                <img src="./img/img18.jpg" alt="" />
                             </figure>
-                            <figure>
-                                <img src="./img/room02.jpg" alt="">
-                            </figure>
-                            <figure>
-                                <img src="./img/room03.jpg" alt="">
-                            </figure>
-                            <figure>
-                                <img src="./img/room04.jpg" alt="">
-                            </figure>
-                            <figure>
-                                <img src="./img/room05.jpg" alt="">
-                            </figure>
-                            <figure>
-                                <img src="./img/room06.jpg" alt="">
-                            </figure>
+                            <h3>디플로마 스위트</h3>
+                            <p>남해바다 그 비밀스러운 공간에 자리 잡고 있는 베이클럽은 격이 다른 건축의 미와 호텔급 서비스를 제공하는 고품격 프라이빗 풀빌라 리조트입니다.</p>
                         </div>
-                        <div class="arrow">
-                            <i class="xi-angle-left-thin"></i>
-                            <i class="xi-angle-right-thin"></i>
+                        <div class="club">
+                            <figure>
+                                <img src="./img/img24.jpg" alt="" />
+                            </figure>
+                            <h3>클럽 스위트</h3>
+                            <p>남해바다 그 비밀스러운 공간에 자리 잡고 있는 베이클럽은 격이 다른 건축의 미와 호텔급 서비스를 제공하는 고품격 프라이빗 풀빌라 리조트입니다.</p>
+                        </div>
+                        <div class="rooptop">
+                            <figure>
+                                <img src="./img/img28.jpg" alt="" />
+                            </figure>
+                            <h3>루프탑 스위트</h3>
+                            <p>남해바다 그 비밀스러운 공간에 자리 잡고 있는 베이클럽은 격이 다른 건축의 미와 호텔급 서비스를 제공하는 고품격 프라이빗 풀빌라 리조트입니다.</p>
+                        </div>
+                        <div class="forest">
+                            <figure>
+                                <img src="./img/room06.jpg" alt="" />
+                            </figure>
+                            <h3>포레스트 스위트</h3>
+                            <p>남해바다 그 비밀스러운 공간에 자리 잡고 있는 베이클럽은 격이 다른 건축의 미와 호텔급 서비스를 제공하는 고품격 프라이빗 풀빌라 리조트입니다.</p>
+                        </div>
+                        <div class="gym">
+                            <figure>
+                                <img src="./img/img12.jpg" alt="" />
+                            </figure>
+                            <h3>피트니스센터</h3>
+                            <p>남해바다 그 비밀스러운 공간에 자리 잡고 있는 베이클럽은 격이 다른 건축의 미와 호텔급 서비스를 제공하는 고품격 프라이빗 풀빌라 리조트입니다.</p>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section class="mainMap">
-                <div class="mapWrap">
-                </div>
-                <h2>MAP</h2>
-                <ul class="tapMap">
-                    <li class="">
-                        <a href=""><i class="xi-maker"></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i class="xi-maker"></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i class="xi-maker"></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i class="xi-maker"></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i class="xi-maker"></i></a>
-                    </li>
-                </ul>
-                <div class="location">
-                    <div class="diploma">
-                        <figure>
-                            <img src="./img/img18.jpg" alt="">
-                        </figure>
-                        <h3>디플로마 스위트</h3>
-                        <p>남해바다 그 비밀스러운 공간에 자리 잡고 있는 베이클럽은<br />
-                            격이 다른 건축의 미와 호텔급 서비스를 제공하는 고품격 프라이빗<br />풀빌라 리조트입니다.</p>
+                </section>
+                <section class="mainRoot">
+                    <div class="container">
+                        <h2>오시는 길</h2>
 
-                    </div>
-                    <div class="club">
-                        <figure>
-                            <img src="./img/img24.jpg" alt="">
-                        </figure>
-                        <h3>클럽 스위트</h3>
-                        <p>남해바다 그 비밀스러운 공간에 자리 잡고 있는 베이클럽은<br />
-                            격이 다른 건축의 미와 호텔급 서비스를 제공하는 고품격 프라이빗<br />풀빌라 리조트입니다.</p>
-
-                    </div>
-                    <div class="rooptop">
-                        <figure>
-                            <img src="./img/img28.jpg" alt="">
-                        </figure>
-                        <h3>루프탑 스위트</h3>
-                        <p>남해바다 그 비밀스러운 공간에 자리 잡고 있는 베이클럽은<br />
-                            격이 다른 건축의 미와 호텔급 서비스를 제공하는 고품격 프라이빗<br />풀빌라 리조트입니다.</p>
-
-                    </div>
-                    <div class="forest">
-                        <figure>
-                            <img src="./img/room06.jpg" alt="">
-                        </figure>
-                        <h3>포레스트 스위트</h3>
-                        <p>남해바다 그 비밀스러운 공간에 자리 잡고 있는 베이클럽은<br />
-                            격이 다른 건축의 미와 호텔급 서비스를 제공하는 고품격 프라이빗<br />풀빌라 리조트입니다.</p>
-
-                    </div>
-                    <div class="gym">
-                        <figure>
-                            <img src="./img/img12.jpg" alt="">
-                        </figure>
-                        <h3>피트니스센터</h3>
-                        <p>남해바다 그 비밀스러운 공간에 자리 잡고 있는 베이클럽은<br />
-                            격이 다른 건축의 미와 호텔급 서비스를 제공하는 고품격 프라이빗<br />풀빌라 리조트입니다.</p>
-
-                    </div>
-                </div>
-            </section>
-            <section class="mainRoot">
-                <div class="container">
-                    <h2>오시는 길</h2>
-
-                    <div class="content">
-                        <div class="left">
-                            <div class="car">
-                                <h3>자동차 이용</h3>
-                                <p>남해고속도로를 따라 약 300m 이동 → 사천IC교차로에서 '사천, 사천공항' 방면으로
-                                    오른쪽 방향 → 사천대로를 따라 약 19km 이동 → 자산터널 진입 후 사천대로를 따라
-                                    약 3km 이동 → 대방교차로에서 '남해.창선, 늑도.초양, 창선삼천포대교' 방면으로
-                                    우회전 → 삼천포대교로를 따라 약 10km 이동 → '오용리, 부윤리, 창선면사무소, 수산리'
-                                    방면으로 오른쪽 방향 → 약 300m 이동 후 좌회전 → 베이클럽</p>
-                            </div>
-                            <div class="bus">
-                                <h3>대중교통 이용</h3>
-                                <p><strong>버스 이용</strong> <br />
-                                    농어촌 남해-연곡(초양.난음.지족.수산.오룡.가인)(남해공용터미널) 승차 → 약 1시간 30분 소요 (33개 정류장) → 식포 정류장 하차 → 약
-                                    500m
-                                    이동 → 베이클럽
-                                </p>
-
-                                <p><strong>택시 이용</strong> <br />
-                                    남해시외버스터미널 → 약 35분 소요 → 베이클럽 (택시비 약 34,500원)</p>
-                            </div>
-                        </div>
-                        <div class="map">
-                            <div class="case">
-                                <!-- * 카카오맵 - 지도퍼가기 -->
-                                <!-- 1. 지도 노드 -->
-                                <div id="daumRoughmapContainer1658472629766"
-                                    class="root_daum_roughmap root_daum_roughmap_landing">
+                        <div class="content">
+                            <div class="left">
+                                <div class="car">
+                                    <h3>자동차 이용</h3>
+                                    <p>
+                                        남해고속도로를 따라 약 300m 이동 → 사천IC교차로에서 '사천, 사천공항' 방면으로 오른쪽 방향 → 사천대로를 따라 약 19km 이동 → 자산터널 진입 후 사천대로를 따라 약
+                                        3km 이동 → 대방교차로에서 '남해.창선, 늑도.초양, 창선삼천포대교' 방면으로 우회전 → 삼천포대교로를 따라 약 10km 이동 → '오용리, 부윤리, 창선면사무소, 수산리'
+                                        방면으로 오른쪽 방향 → 약 300m 이동 후 좌회전 → 베이클럽
+                                    </p>
                                 </div>
+                                <div class="bus">
+                                    <h3>대중교통 이용</h3>
+                                    <p>
+                                        <strong>버스 이용</strong>
+                                        <br />
+                                        농어촌 남해-연곡(초양.난음.지족.수산.오룡.가인)(남해공용터미널) 승차 → 약 1시간 30분 소요 (33개 정류장) → 식포 정류장 하차 → 약 500m 이동 → 베이클럽
+                                    </p>
 
-                                <!--
+                                    <p>
+                                        <strong>택시 이용</strong>
+                                        <br />
+                                        남해시외버스터미널 → 약 35분 소요 → 베이클럽 (택시비 약 34,500원)
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="map">
+                                <div class="case">
+                                    <!-- * 카카오맵 - 지도퍼가기 -->
+                                    <!-- 1. 지도 노드 -->
+                                    <div id="daumRoughmapContainer1658472629766" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+                                    <!--
         2. 설치 스크립트
         * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
     -->
-                                <script charset="UTF-8" class="daum_roughmap_loader_script"
-                                    src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                                    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 
-                                <!-- 3. 실행 스크립트 -->
-                                <script charset="UTF-8">
-                                    new daum.roughmap.Lander({
-                                        "timestamp": "1658472629766",
-                                        "key": "2b4h9",
-                                        //"mapWidth": "640",
-                                        "mapHeight": "360"
-                                    }).render();
-                                </script>
+                                    <!-- 3. 실행 스크립트 -->
+                                    <script charset="UTF-8">
+                                        new daum.roughmap.Lander({
+                                            timestamp: "1658472629766",
+                                            key: "2b4h9",
+                                            //"mapWidth": "640",
+                                            mapHeight: "360",
+                                        }).render();
+                                    </script>
+                                </div>
                             </div>
-
                         </div>
                     </div>
+                </section>
+            </main>
+            <!-- 2022.07.21 main chae } -->
+            <!-- { 2022.07.22 footer chae -->
+            <footer id="footer">
+                <div class="top">
+                    <div class="container">
+                        <a href="">
+                            <img src="./img/logo_w.png" alt="" />
+                        </a>
+                        <div class="box">
+                            <div class="inner">
+                                <div class="footfac">
+                                    <h2>Facility</h2>
+                                    <dl>
+                                        <dd>피트니스센터</dd>
+                                        <dd>카페 & 라운지</dd>
+                                        <dd>컨퍼런스 룸</dd>
+                                        <dd>수영장</dd>
+                                    </dl>
+                                </div>
 
-                </div>
-            </section>
-        </main>
-        <!-- 2022.07.21 main chae } -->
-        <!-- { 2022.07.22 footer chae -->
-        <footer id="footer">
-            <div class="top">
-                <div class="container">
-                    <a href="">
-                        <img src="./img/logo_w.png" alt="">
-                    </a>
-                    <div class="box">
-                        <div class="inner">
-                            <div class="footfac">
-                                <h2>Facility</h2>
+                                <div class="footReser">
+                                    <h2>Reservation</h2>
+                                    <dl>
+                                        <dd>실시간 예약</dd>
+                                        <dd>예약 안내</dd>
+                                        <dd>이용 안내</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="footRoom">
+                                <h2>Room</h2>
                                 <dl>
-                                    <dd>피트니스센터</dd>
-                                    <dd>카페 & 라운지</dd>
-                                    <dd>컨퍼런스 룸</dd>
-                                    <dd>수영장</dd>
+                                    <dd>디플로마스위트</dd>
+                                    <dd>포레스트스위트</dd>
+                                    <dd>루프탑스위트</dd>
+                                    <dd>베이스위트</dd>
+                                    <dd>클럽스위트</dd>
                                 </dl>
                             </div>
-
-                            <div class="footReser">
-                                <h2>Reservation</h2>
-                                <dl>
-                                    <dd>실시간 예약</dd>
-                                    <dd>예약 안내</dd>
-                                    <dd>이용 안내</dd>
-                                </dl>
-                            </div>
-                        </div>
-                        <div class="footRoom">
-                            <h2>Room</h2>
-                            <dl>
-                                <dd>디플로마 스위트</dd>
-                                <dd>포레스트 스위트</dd>
-                                <dd>루프탑 스위트</dd>
-                                <dd>베이 스위트</dd>
-                                <dd>클럽 스위트</dd>
-                            </dl>
                         </div>
                     </div>
-
                 </div>
-            </div>
-            <div class="bottom">
-                <dl>
-                    <dd>사업자등록번호 : 2551500579</dd>
-                    <dd>주소 : 경상남도 남해군 창선면 흥선로 447-42</dd>
-                    <dd>대표 : 배필리</dd>
-                    <dd>통신판매업신고번호 : 0000</dd>
-                </dl>
-                <div class="icon">
-                    <a href=""><i class="xi-facebook"></i></a>
-                    <a href=""><i class="xi-youtube"></i></a>
-                    <a href=""><i class="xi-instagram"></i></a>
+                <div class="bottom">
+                    <dl>
+                        <dd>사업자등록번호 : 2551500579</dd>
+                        <dd>주소 : 경상남도 남해군 창선면 흥선로 447-42</dd>
+                        <dd>대표 : 배필리</dd>
+                        <dd>통신판매업신고번호 : 0000</dd>
+                    </dl>
+                    <div class="icon">
+                        <a href=""><i class="xi-facebook"></i></a>
+                        <a href=""><i class="xi-youtube"></i></a>
+                        <a href=""><i class="xi-instagram"></i></a>
+                    </div>
                 </div>
-            </div>
-        </footer>
-        <!-- 2022.07.25 footer chae } -->
-    </div>
+            </footer>
+            <!-- 2022.07.25 footer chae } -->
+        </div>
 
-    <script src="./js/jquery-1.12.4.min.js"></script>
-    <script src="./js/jquery.scrollme.min.js"></script>
-    <script src="./js/slick.min.js"></script>
-    <script src="./js/test04.js"></script>
-</body>
-
+        <script src="./js/jquery-1.12.4.min.js"></script>
+        <script src="./js/jquery.scrollme.min.js"></script>
+        <script src="./js/slick.min.js"></script>
+        <script src="./js/test04.js"></script>
+    </body>
 </html>

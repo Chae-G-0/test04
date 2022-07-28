@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Nanum+Myeongjo&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Nanum+Myeongjo&display=swap");
 
 #header {
     position: absolute;
@@ -41,7 +41,7 @@
     display: block;
 }
 
-.gnb>ul::after {
+.gnb > ul::after {
     content: "";
     position: absolute;
     top: 150px;
@@ -54,7 +54,7 @@
     z-index: 998;
 }
 
-.gnb>ul:hover::after {
+.gnb > ul:hover::after {
     height: 200px;
     transition: 0.5s;
 }
@@ -74,20 +74,20 @@
     z-index: 999;
 }
 
-.gnb>ul:hover .smenu {
+.gnb > ul:hover .smenu {
     height: 200px;
 }
 
-.gnb>ul {
+.gnb > ul {
     display: flex;
     text-align: center;
 }
 
-.gnb>ul>li {
+.gnb > ul > li {
     position: relative;
 }
 
-.gnb>ul>li>a {
+.gnb > ul > li > a {
     padding: 0 45px;
     font-size: 19px;
     font-weight: 500;
@@ -213,7 +213,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    background: url(../img/img01.jpg)no-repeat fixed center/cover;
+    background: url(../img/img01.jpg) no-repeat fixed center/cover;
     height: 500px;
 }
 
@@ -291,7 +291,7 @@
 
 .mainMap {
     position: relative;
-    background: url(../img/img15.jpg)no-repeat center center/ cover;
+    background: url(../img/img15.jpg) no-repeat center center/ cover;
     height: 100vh;
 }
 
@@ -303,7 +303,7 @@
     position: absolute;
     inset: 10% auto auto 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Libre Baskerville', serif;
+    font-family: "Libre Baskerville", serif;
     font-size: 35px;
     font-weight: 700;
     margin: 0 0 30px 0;
@@ -311,7 +311,7 @@
     text-shadow: 0 0 3px #333;
 }
 
-.mainMap .tapMap>li {
+.mainMap .tapMap > li {
     position: absolute;
     font-size: 35px;
     color: #333;
@@ -321,8 +321,7 @@
     animation: arrow 2s;
 }
 
-
-.mainMap .tapMap>li.on {
+.mainMap .tapMap > li.on {
     animation: arrow 2s infinite;
     color: rgb(0, 110, 255);
 }
@@ -333,23 +332,23 @@
     }
 }
 
-.mainMap .tapMap>li:nth-child(1) {
+.mainMap .tapMap > li:nth-child(1) {
     inset: 40% auto auto 52%;
 }
 
-.mainMap .tapMap>li:nth-child(2) {
+.mainMap .tapMap > li:nth-child(2) {
     inset: 18% auto auto 78%;
 }
 
-.mainMap .tapMap>li:nth-child(3) {
+.mainMap .tapMap > li:nth-child(3) {
     inset: 37% auto auto 67%;
 }
 
-.mainMap .tapMap>li:nth-child(4) {
+.mainMap .tapMap > li:nth-child(4) {
     inset: 39% auto auto 88%;
 }
 
-.mainMap .tapMap>li:nth-child(5) {
+.mainMap .tapMap > li:nth-child(5) {
     inset: 40% auto auto 59.5%;
 }
 
@@ -388,15 +387,15 @@
     margin: 0 0 30px 0;
 }
 
-.mainMap .location>div {
+.mainMap .location > div {
     display: none;
 }
 
-.mainMap .location>div.on {
+.mainMap .location > div.on {
     display: block;
 }
 
-.mainMap .location>div:hover {
+.mainMap .location > div:hover {
     box-shadow: 0 0 3px #555;
 }
 
@@ -525,7 +524,8 @@
 }
 
 @media (max-width: 768px) {
-    * {}
+    * {
+    }
 
     #header {
         position: absolute;
@@ -585,7 +585,7 @@
         display: block;
     }
 
-    .gnb>ul::after {
+    .gnb > ul::after {
         display: none;
         content: "";
         position: absolute;
@@ -593,17 +593,17 @@
         left: 0;
         width: auto;
         height: 0;
-        background-color: rgba(255, 255, 255, 0.0);
+        background-color: rgba(255, 255, 255, 0);
         backdrop-filter: blur(10px);
         transition: 0.5s;
         z-index: 998;
     }
 
-    .gnb>ul:hover::after {
+    .gnb > ul:hover::after {
         height: 200px;
     }
 
-    .gnb>ul {
+    .gnb > ul {
         display: flex;
         flex-direction: column;
         width: auto;
@@ -611,13 +611,13 @@
         text-align: center;
     }
 
-    .gnb>ul>li {
+    .gnb > ul > li {
         position: relative;
         flex: 1;
         border-bottom: 1px solid #ddd;
     }
 
-    .gnb>ul>li>a {
+    .gnb > ul > li > a {
         padding: 0 45px;
         font-size: 19px;
         font-weight: 500;
@@ -642,7 +642,7 @@
         z-index: 999;
     }
 
-    .gnb>ul:hover .smenu {
+    .gnb > ul:hover .smenu {
         display: none;
         height: auto;
     }
@@ -750,7 +750,6 @@
         position: relative;
     }
 
-
     .mainFacility .container .facility figure p {
         position: absolute;
         inset: 50% auto auto 50%;
@@ -776,7 +775,7 @@
         position: relative;
         display: flex;
         align-items: center;
-        background: url(../img/img01.jpg)no-repeat fixed center/cover;
+        background: url(../img/img01.jpg) no-repeat fixed center/cover;
         height: 300px;
     }
 
@@ -857,15 +856,16 @@
 
     .mainMap {
         position: relative;
-        background: url(../img/img15.jpg)no-repeat center left 75%/ cover;
+        background: url(../img/img15.jpg) no-repeat center left 75% / cover;
         height: 600px;
+        overflow: hidden;
     }
 
     .mainMap h2 {
         position: absolute;
         inset: 10% auto auto 50%;
         transform: translate(-50%, -50%);
-        font-family: 'Libre Baskerville', serif;
+        font-family: "Libre Baskerville", serif;
         font-size: 35px;
         font-weight: 700;
         margin: 0 0 30px 0;
@@ -873,19 +873,19 @@
         text-shadow: 0 0 3px #555;
     }
 
-    .mainMap .tapMap>li {
+    .mainMap .tapMap > li {
         position: absolute;
         font-size: 35px;
         color: rgb(0, 110, 255);
         animation: arrow 2s;
     }
 
-    .mainMap .tapMap>li.on {
+    .mainMap .tapMap > li.on {
         animation: arrow 2s infinite;
         color: rgb(0, 110, 255);
     }
 
-    .mainMap .tapMap>li.on .mapWrap {
+    .mainMap .tapMap > li.on .mapWrap {
         background: #333;
         width: 100%;
     }
@@ -896,31 +896,31 @@
         }
     }
 
-    .mainMap .tapMap>li:nth-child(1) {
+    .mainMap .tapMap > li:nth-child(1) {
         inset: 40% auto auto 24%;
     }
 
-    .mainMap .tapMap>li:nth-child(2) {
+    .mainMap .tapMap > li:nth-child(2) {
         inset: 21% auto auto 78%;
     }
 
-    .mainMap .tapMap>li:nth-child(3) {
+    .mainMap .tapMap > li:nth-child(3) {
         inset: 37% auto auto 57%;
     }
 
-    .mainMap .tapMap>li:nth-child(4) {
+    .mainMap .tapMap > li:nth-child(4) {
         inset: 33% auto auto 76%;
     }
 
-    .mainMap .tapMap>li:nth-child(5) {
+    .mainMap .tapMap > li:nth-child(5) {
         inset: 40% auto auto 42%;
     }
 
     .mainMap .location div {
         position: absolute;
         inset: 50% auto auto 50%;
+        width: calc(100% - 40px);
         transform: translate(-50%, -50%);
-        width: 450px;
         background-color: rgba(255, 255, 255, 0.6);
         backdrop-filter: blur(10px);
         border-radius: 15px;
@@ -951,15 +951,15 @@
         margin: 0 0 30px 0;
     }
 
-    .mainMap .location>div {
+    .mainMap .location > div {
         display: none;
     }
 
-    .mainMap .location>div.on {
+    .mainMap .location > div.on {
         display: block;
     }
 
-    .mainMap .location>div:hover {
+    .mainMap .location > div:hover {
         box-shadow: 0 0 3px #555;
     }
 
@@ -1062,7 +1062,7 @@
     }
 
     #footer .top .container .box {
-        padding: 10px 10px;
+        padding: 10px 10px 30px;
     }
 
     #footer .top .container .inner {
@@ -1082,7 +1082,7 @@
         display: flex;
         gap: 20px;
         line-height: 1.4;
-        font-size: 15px;
+        font-size: 13px;
         font-weight: 300;
     }
 
@@ -1091,7 +1091,7 @@
         justify-content: space-between;
         width: auto;
         margin: 0 auto;
-        padding: 10px 10px;
+        padding: 30px 10px;
     }
 
     #footer .bottom i {
@@ -1102,9 +1102,10 @@
     #footer .bottom dl {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
         font-size: 13px;
         font-weight: 300;
         line-height: 1.4;
+        padding-bottom: 2px;
     }
 }
