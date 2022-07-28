@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Nanum+Myeongjo&display=swap');
 
-* {
-    /* outline: 1px solid #f00; */
-}
-
 #header {
     position: absolute;
     top: 0;
@@ -59,7 +55,8 @@
 }
 
 .gnb>ul:hover::after {
-    height: 0px;
+    height: 200px;
+    transition: 0.5s;
 }
 
 .gnb .smenu {
@@ -78,7 +75,7 @@
 }
 
 .gnb>ul:hover .smenu {
-    height: 0px;
+    height: 200px;
 }
 
 .gnb>ul {
@@ -152,7 +149,7 @@
 }
 
 .mainFacility {
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 .mainFacility .container {
@@ -603,7 +600,6 @@
     }
 
     .gnb>ul:hover::after {
-        display: none;
         height: 200px;
     }
 
@@ -639,14 +635,16 @@
         font-weight: 500;
         line-height: 50px;
         color: #333;
+        background: #f9f9f9;
         overflow: hidden;
-        transition: translateX(0);
+        transition: none;
+        height: auto;
         z-index: 999;
     }
 
     .gnb>ul:hover .smenu {
-        height: 200px;
-        pointer-events: none;
+        display: none;
+        height: auto;
     }
 
     .mbtn {
@@ -873,7 +871,6 @@
         margin: 0 0 30px 0;
         color: #fff;
         text-shadow: 0 0 3px #555;
-        ;
     }
 
     .mainMap .tapMap>li {
@@ -886,6 +883,11 @@
     .mainMap .tapMap>li.on {
         animation: arrow 2s infinite;
         color: rgb(0, 110, 255);
+    }
+
+    .mainMap .tapMap>li.on .mapWrap {
+        background: #333;
+        width: 100%;
     }
 
     @keyframes arrow {
@@ -1035,7 +1037,6 @@
         height: 100%;
     }
 
-
     #footer {
         background: #111;
         color: #ddd;
@@ -1051,7 +1052,7 @@
         flex-direction: column;
         gap: 10px;
         width: auto;
-        margin: 0 auto;
+        margin: 0;
     }
 
     #footer .top .container h2 {
@@ -1061,7 +1062,7 @@
     }
 
     #footer .top .container .box {
-        padding: 20px 20px;
+        padding: 10px 10px;
     }
 
     #footer .top .container .inner {
@@ -1090,7 +1091,7 @@
         justify-content: space-between;
         width: auto;
         margin: 0 auto;
-        padding: 50px 10px;
+        padding: 10px 10px;
     }
 
     #footer .bottom i {

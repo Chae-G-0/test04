@@ -1,15 +1,20 @@
 $(function () {
     $('.mbtn').on('click', function () {
         $('.gnb').toggleClass('on')
-    })
+    });
 
     $('.gnb>ul>li>a').on('click', function (e) {
         if ($('.gnb').hasClass('on')) {
             e.preventDefault();
-            $('.smenu').stop().slideUp();
-            $(this).next().slideToggle();
+            $('.smenu').slideUp();
+            $(this).next().stop().slideToggle();
         }
-    })
+    });
+
+    // $(window).on('resize', function(){
+    //     $('.gnb').removeClass('on');
+    //     $('.smenu').removeAttr('style')
+    // })
 
     $('.mainSlide').slick({
         arrows: false,
