@@ -836,10 +836,26 @@
         text-align: center;
     }
 
+    .mainRoom .container .txt {
+        display: flex;
+        justify-content: center;
+    }
+
     .mainRoom .container h2 {
         font-size: 30px;
         font-weight: 500;
         margin: 0 0 30px 0;
+        color: #333;
+    }
+
+    .mainRoom .container a {
+        display: none;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 30px;
+        margin: 0 0 30px 0;
+        border: 1px solid #333;
+        padding: 0 25px;
         color: #333;
     }
 
